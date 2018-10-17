@@ -28,9 +28,7 @@ public class AddTwoNumbers {
         ListNode firstNode = new ListNode(0);
         ListNode q = l1, p = l2, tempNode = firstNode;
         int flag = 0;
-        ListNode nextNode = null;
-        List list = new ArrayList<>();
-        //firstNode.next = firstNextNode;
+        ListNode nextNode;
         while (q != null || p != null) {
             if (q == null) {
                 q = new ListNode(0);
