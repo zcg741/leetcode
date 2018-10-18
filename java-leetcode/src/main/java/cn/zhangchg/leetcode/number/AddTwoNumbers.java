@@ -15,43 +15,52 @@ public class AddTwoNumbers {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
         ListNode l11 = new ListNode(8);
-        //l11.next = new ListNode(3);
+        l11.next = new ListNode(3);
         l1.next = l11;
         ListNode l2 = new ListNode(0);
-        //ListNode l21 = new ListNode(6);
-        //l21.next = new ListNode(4);
-        //l2.next = l21;
+        ListNode l21 = new ListNode(6);
+        l21.next = new ListNode(4);
+        l2.next = l21;
         ListNode listNode = addTwoNumbers(l1, l2);
+        System.err.println(listNode.val + ">" + listNode.next.val + ">" + listNode.next.next.val);
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode firstNode = new ListNode(0);
-        ListNode q = l1, p = l2, tempNode = firstNode;
+        ListNode tempNode = firstNode;
         int flag = 0;
         ListNode nextNode;
-        while (q != null || p != null) {
-            if (q == null) {
-                q = new ListNode(0);
+        while (l1 != null || l2 != null) {
+            if (l1 == null) {
+                if (flag == 0) {
+                    tempNode.next = l2;
+                    flag = 1;
+                    break;
+                } else {
+                    l1 = new ListNode(0);
+                }
             }
-            if (p == null) {
-                p = new ListNode(0);
+            if (l2 == null) {
+                if (flag == 0) {
+                    tempNode.next = l1;
+                    flag = 1;
+                    break;
+                } else {
+                    l2 = new ListNode(0);
+                }
             }
-            int sum = flag + q.val + p.val;
+            int sum = flag + l1.val + l2.val;
             nextNode = new ListNode(sum % 10);
             nextNode.next = new ListNode(sum / 10);
             flag = sum / 10;
-            if (l1 == q) {
+            if (tempNode == null) {
                 firstNode.next = nextNode;
             } else {
                 tempNode.next = nextNode;
             }
             tempNode = nextNode;
-            if (p != null) {
-                p = p.next;
-            }
-            if (q != null) {
-                q = q.next;
-            }
+            l2 = l2.next;
+            l1 = l1.next;
         }
         if (flag == 0) {
             tempNode.next = null;
