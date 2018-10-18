@@ -1,6 +1,7 @@
 package cn.zhangchg.leetcode.number;
 
 /**
+ * 两数之和
  * @author 张晨刚
  */
 public class TwoSum {
