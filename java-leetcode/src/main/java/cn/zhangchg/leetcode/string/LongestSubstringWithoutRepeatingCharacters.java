@@ -1,7 +1,9 @@
 package cn.zhangchg.leetcode.string;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 无重复字符的最长子串
@@ -39,16 +41,41 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
     }
 
+
     public static int lengthOfLongestSubstring(String s) {
+        Set characterSet = new HashSet();
+        int start = 0, length = 0;
+        char[] charStrings = s.toCharArray();
+        for (int end = 0; end < charStrings.length; ) {
+            char charString = charStrings[end++];
+            if (!characterSet.contains(charString)) {
+                characterSet.add(charString);
+                length = Math.max(length, end - start);
+            } else {
+                for (int j = start; charStrings[start] != charString; j++, start++) {
+                    characterSet.remove(charStrings[start]);
+                }
+                start++;
+            }
+        }
+        return length;
+    }
+
+    /**
+     * 用了递归，数据一多就废了
+     *
+     * @param s
+     * @return
+     */
+    public static int lengthOfLongestSubstring2(String s) {
         char[] chars = new char[s.length()];
-        Map<Character,Boolean> characterMap = new HashMap<>();
+        Map<Character, Boolean> characterMap = new HashMap<>();
         //int[] zmChars = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         //        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         int start = 0, end = 0, length = 0;
         char[] charStrings = s.toCharArray();
         for (char charString : charStrings) {
             boolean isSame = false;
-            int charInt = charString - 97;
             if (Boolean.TRUE.equals(characterMap.get(charString))) {
                 isSame = true;
             }
@@ -69,7 +96,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
                 break;
             }
             length++;
-            characterMap.put(charString,Boolean.TRUE);
+            characterMap.put(charString, Boolean.TRUE);
         }
         return length;
     }
