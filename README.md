@@ -19,4 +19,6 @@
 | 类   |      功能      |  备注 |
 |----------|:-------------:|------:|
 | LongestSubstringWithoutRepeatingCharacters |  无重复字符的最长子串 |  |
+| ZigzagConversion |  Z字形走位 | 自己的算法很慢 |
+| StringToIntegerAtoi |  将字符串转为整数 |  |
 
