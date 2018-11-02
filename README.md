@@ -14,6 +14,7 @@
 | 类   |      功能      |  备注 |
 |----------|:-------------:|------:|
 | MedianOfTwoSortedArrays |  两个有序数组的中位数 |  |
+| ContainerWithMostWater |  可以容纳最多的水 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
