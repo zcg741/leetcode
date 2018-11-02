@@ -15,6 +15,7 @@
 |----------|:-------------:|------:|
 | MedianOfTwoSortedArrays |  两个有序数组的中位数 |  |
 | ContainerWithMostWater |  可以容纳最多的水 |  |
+| LongestCommonPrefix |  最长公共前缀 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
