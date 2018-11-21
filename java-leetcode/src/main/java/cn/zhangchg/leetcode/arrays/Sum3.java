@@ -50,15 +50,15 @@ public class Sum3 {
             while (left < right) {
                 int temNum = nums[i] + nums[left] + nums[right];
                 if (temNum == 0) {
-                    StringBuffer sb = new StringBuffer();
-                    sb.append(nums[i]).append(nums[left]).append(nums[right]);
-                    String string = sb.toString();
-                    if (map.containsKey(string)) {
-                        ++left;
-                        continue;
-                    }
-                    map.put(string, true);
                     list.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                    while (left < right && nums[left] == nums[left + 1]) {
+                        left++;
+                    }
+                    while (left < right && nums[right] == nums[right - 1]) {
+                        right--;
+                    }
+                    left++;
+                    continue;
                 }
                 if (temNum < 0) {
                     ++left;
