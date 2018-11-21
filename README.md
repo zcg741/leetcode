@@ -28,6 +28,7 @@
 | StringToIntegerAtoi |  将字符串转为整数 |  |
 | RomanToInteger |  罗马数字转阿拉伯数字 |  |
 | LetterCombinationsOfaPhoneNumber |  电话号码的字母组合 |  |
+| ValidParentheses |  有效的括号 |  |
 
 ### 链表相关
 | 类   |      功能      |  备注 |
