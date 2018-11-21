@@ -36,6 +36,44 @@ public class Sum3 {
         if (nums.length < 3) {
             return Collections.emptyList();
         }
+        Arrays.sort(nums);
+        Map<Integer, Boolean> mapFlag = new HashMap<>(nums.length);
+        List<List<Integer>> list = new ArrayList<>();
+        Map<String, Boolean> map = new HashMap<>();
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (mapFlag.containsKey(nums[i])) {
+                continue;
+            }
+            mapFlag.put(nums[i], true);
+            int left = i + 1, right = nums.length - 1;
+            //boolean isLessZero = nums[i] + nums[left] + nums[right] < 0;
+            while (left < right) {
+                int temNum = nums[i] + nums[left] + nums[right];
+                if (temNum == 0) {
+                    StringBuffer sb = new StringBuffer();
+                    sb.append(nums[i]).append(nums[left]).append(nums[right]);
+                    String string = sb.toString();
+                    if (map.containsKey(string)) {
+                        ++left;
+                        continue;
+                    }
+                    map.put(string, true);
+                    list.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                }
+                if (temNum < 0) {
+                    ++left;
+                } else {
+                    --right;
+                }
+            }
+        }
+        return list;
+    }
+
+    public static List<List<Integer>> threeSumMan(int[] nums) {
+        if (nums.length < 3) {
+            return Collections.emptyList();
+        }
         Map<Integer, Integer> mapFlag = new HashMap<>(16);
         for (int num : nums) {
             if (mapFlag.containsKey(num)) {
