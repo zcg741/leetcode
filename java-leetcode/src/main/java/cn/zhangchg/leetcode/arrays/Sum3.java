@@ -1,6 +1,5 @@
 package cn.zhangchg.leetcode.arrays;
 
-import java.io.Serializable;
 import java.util.*;
 
 /**

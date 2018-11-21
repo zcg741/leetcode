@@ -2,9 +2,6 @@ package cn.zhangchg.leetcode.number;
 
 import cn.zhangchg.leetcode.list.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
