@@ -12,6 +12,7 @@
 | IntegerToRoman | 阿拉伯数字转罗马数字 |     |
 | Sum3 | 三数之和 |     |
 | ThreeSumClosest |  最接近的三数之和 |     |
+| GenerateParenthesis |  括号生成 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
