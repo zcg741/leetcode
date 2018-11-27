@@ -10,8 +10,6 @@
 | ReverseInteger |    将整数中的数字进行反转   |    |
 | PalindromeNumber | 判断是否是回文数 |     |
 | IntegerToRoman | 阿拉伯数字转罗马数字 |     |
-| Sum3 | 三数之和 |     |
-| ThreeSumClosest |  最接近的三数之和 |     |
 | GenerateParenthesis |  括号生成 |     |
 
 ### 数组相关
@@ -20,6 +18,10 @@
 | MedianOfTwoSortedArrays |  两个有序数组的中位数 |  |
 | ContainerWithMostWater |  可以容纳最多的水 |  |
 | LongestCommonPrefix |  最长公共前缀 |  |
+| Sum3 | 三数之和 |     |
+| ThreeSumClosest |  最接近的三数之和 |     |
+| RemoveDuplicates |  删除重复 |  |
+| RemoveElement |  删除元素 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
