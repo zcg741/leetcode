@@ -11,6 +11,7 @@
 | PalindromeNumber | 判断是否是回文数 |     |
 | IntegerToRoman | 阿拉伯数字转罗马数字 |     |
 | GenerateParenthesis |  括号生成 |     |
+| DivideTwoIntegers |  除法 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
