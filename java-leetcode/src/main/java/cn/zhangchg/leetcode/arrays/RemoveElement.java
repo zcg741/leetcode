@@ -42,7 +42,7 @@ package cn.zhangchg.leetcode.arrays;
  *
  * @author 张晨刚
  */
-public class RemoveElement {
+    public class RemoveElement {
 
     public static void main(String[] args) {
         int[] nums = new int[]{Integer.MIN_VALUE, 0, 1, 1, 1, 2, 2, 3, 3, 4};
