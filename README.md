@@ -32,6 +32,7 @@
 | RomanToInteger |  罗马数字转阿拉伯数字 |  |
 | LetterCombinationsOfaPhoneNumber |  电话号码的字母组合 |  |
 | ValidParentheses |  有效的括号 |  |
+| ImplementStrStr |  查询字符串 |  |
 
 ### 链表相关
 | 类   |      功能      |  备注 |
