@@ -24,6 +24,7 @@
 | RemoveDuplicates |  删除重复 |  |
 | RemoveElement |  删除元素 |  |
 | NextPermutation |  实现获取下一个排列 |  |
+| SearchInRotatedSortedArray |  查询升序排序的数组 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
