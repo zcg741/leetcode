@@ -23,6 +23,7 @@
 | ThreeSumClosest |  最接近的三数之和 |     |
 | RemoveDuplicates |  删除重复 |  |
 | RemoveElement |  删除元素 |  |
+| NextPermutation |  实现获取下一个排列 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
