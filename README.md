@@ -26,6 +26,7 @@
 | NextPermutation |  实现获取下一个排列 |  |
 | SearchInRotatedSortedArray |  查询升序排序的数组 |  |
 | FindFirstAndLastPositionOfElementInSortedArray |  升序排列的整数数组 | 一直递归，但是也凑合 |
+| SearchInsertPosition |  搜索并插入 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
