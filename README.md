@@ -12,6 +12,7 @@
 | IntegerToRoman | 阿拉伯数字转罗马数字 |     |
 | GenerateParenthesis |  括号生成 |     |
 | DivideTwoIntegers |  除法 |     |
+| CountAndSay |  报数序列 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
