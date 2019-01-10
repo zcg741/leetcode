@@ -26,6 +26,7 @@ package cn.zhangchg.leetcode.number;
  * <p>
  * 输入: 4
  * 输出: "1211"
+ * @author 张晨刚
  */
 public class CountAndSay {
 
