@@ -30,6 +30,7 @@
 | FindFirstAndLastPositionOfElementInSortedArray |  升序排列的整数数组 | 一直递归，但是也凑合 |
 | SearchInsertPosition |  搜索并插入 |  |
 | ValidSudoku |  验证数独 |  |
+| TrappingRainWater |  接雨水 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
