@@ -13,6 +13,7 @@
 | GenerateParenthesis |  括号生成 |     |
 | DivideTwoIntegers |  除法 |     |
 | CountAndSay |  报数序列 |     |
+| FirstMissingPositive |  第一个正数 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
