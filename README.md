@@ -32,6 +32,7 @@
 | ValidSudoku |  验证数独 |  |
 | TrappingRainWater |  接雨水 |  |
 | Permutations |  全排列 |  |
+| PermuteUnique |  全排列去重 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
