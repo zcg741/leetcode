@@ -33,6 +33,7 @@
 | TrappingRainWater |  接雨水 |  |
 | Permutations |  全排列 |  |
 | PermuteUnique |  全排列去重 |  |
+| RotateImage |  旋转图片 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
