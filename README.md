@@ -34,6 +34,7 @@
 | Permutations |  全排列 |  |
 | PermuteUnique |  全排列去重 |  |
 | RotateImage |  旋转图片 |  |
+| GroupAnagrams |  字母异位词分组 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
