@@ -37,6 +37,7 @@
 | RotateImage |  旋转图片 |  |
 | GroupAnagrams |  字母异位词分组 |  |
 | MaxSubArray |  最大子序和 | O(N)待尝试使用更为精妙的分治法求解。 |
+| SpiralOrder |  螺旋矩阵 |  |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
