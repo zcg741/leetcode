@@ -15,6 +15,7 @@
 | CountAndSay |  报数序列 |     |
 | FirstMissingPositive |  第一个正数 |     |
 | PowxN |  算 x 的 n 次幂函数 |     |
+| PermutationSequence |  第N个列表 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
