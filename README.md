@@ -39,6 +39,7 @@
 | MaxSubArray |  最大子序和 | O(N)待尝试使用更为精妙的分治法求解。 |
 | SpiralOrder |  螺旋矩阵 |  |
 | SpiralOrder2 |  生成螺旋矩阵 |  |
+| JumpGame |  跳跃游戏 | 现在还不怎么明白题目 |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
