@@ -16,6 +16,8 @@
 | FirstMissingPositive |  第一个正数 |     |
 | PowxN |  算 x 的 n 次幂函数 |     |
 | PermutationSequence |  第N个列表 |     |
+| UniquePaths |  不同路径 |     |
+| UniquePaths2 |  不同路径2 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
