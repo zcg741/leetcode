@@ -1,4 +1,4 @@
-package cn.zhangchg.leetcode.number;
+package cn.zhangchg.leetcode.arrays;
 
 /**
  * 不同路径
@@ -45,7 +45,7 @@ public class UniquePaths2 {
         //System.err.println(uniquePaths(40, 40));
     }
 
-    public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
+    private static int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
         if (obstacleGrid[0][0] == 1) {

@@ -17,7 +17,6 @@
 | PowxN |  算 x 的 n 次幂函数 |     |
 | PermutationSequence |  第N个列表 |     |
 | UniquePaths |  不同路径 |     |
-| UniquePaths2 |  不同路径2 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
@@ -43,6 +42,8 @@
 | SpiralOrder |  螺旋矩阵 |  |
 | SpiralOrder2 |  生成螺旋矩阵 |  |
 | JumpGame |  跳跃游戏 | 现在还不怎么明白题目 |
+| UniquePaths2 |  不同路径2 |     |
+| MinimumPathSum |  最小路径和 |     |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
