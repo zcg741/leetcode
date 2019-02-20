@@ -17,6 +17,7 @@
 | PowxN |  算 x 的 n 次幂函数 |     |
 | PermutationSequence |  第N个列表 |     |
 | UniquePaths |  不同路径 |     |
+| ClimbingStairs |  爬楼梯 |     |
 
 ### 数组相关
 | 类   |      功能      |  备注 |
