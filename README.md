@@ -44,6 +44,7 @@
 | JumpGame |  跳跃游戏 | 现在还不怎么明白题目 |
 | UniquePaths2 |  不同路径2 |     |
 | MinimumPathSum |  最小路径和 |     |
+| PlusOne |  加一 |     |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
