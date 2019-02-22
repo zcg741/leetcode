@@ -46,6 +46,7 @@
 | UniquePaths2 |  不同路径2 |     |
 | MinimumPathSum |  最小路径和 |     |
 | PlusOne |  加一 |     |
+| SetZeroes |  矩阵置零 |     |
 
 ### 字符串相关
 | 类   |      功能      |  备注 |
