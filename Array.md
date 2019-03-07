@@ -31,3 +31,5 @@
 | MinimumPathSum |  最小路径和 |     |
 | PlusOne |  加一 |     |
 | SetZeroes |  矩阵置零 |     |
+| SearchMatrix |  搜索二维矩阵 |     |
+| SortColors |  75. 颜色分类 |     |
