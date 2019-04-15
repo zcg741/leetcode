@@ -18,4 +18,5 @@
 | PermutationSequence |  第N个列表 |     |
 | UniquePaths |  不同路径 |     |
 | ClimbingStairs |  爬楼梯 |     |
+| Combinations |  组合 |     |
 
