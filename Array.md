@@ -34,3 +34,4 @@
 | SearchMatrix |  搜索二维矩阵 |     |
 | SortColors |  75. 颜色分类 |     |
 | Subsets |  78. 子集 |     |
+| WordExist |  79. 单词搜索 |     |
