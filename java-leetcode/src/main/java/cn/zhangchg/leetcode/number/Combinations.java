@@ -38,7 +38,7 @@ public class Combinations {
         //System.err.println(JSONArray.toJSONString(combine));
         //System.err.println(combine.size());
         //start = System.currentTimeMillis();
-        combine = combine(20, 16);
+        combine = combine(3, 2);
         end = System.currentTimeMillis();
         System.err.println(end - start);
         System.err.println(JSONArray.toJSONString(combine));
