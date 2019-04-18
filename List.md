@@ -11,4 +11,5 @@
 | InsertInterval |  插入区间 |  |
 | MergeInterval |  合并区间 |  |
 | RotateList |  旋转链表 |  |
+| DeleteDuplicates2 |  83. 删除排序链表中的重复元素 |  |
 
