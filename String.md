@@ -16,3 +16,4 @@
 | LengthOfLastWord |  最后一个单词的长度 |  |
 | AddBinary |  二进制求和 |  |
 | EditDistance |  编辑距离 |  |
+| NumDecodings |  91.解码方法 |  |
