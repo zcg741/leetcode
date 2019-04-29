@@ -13,3 +13,4 @@
 | SymmetricTree |  101.对称树  |
 | LevelOrder |  102. 二叉树的层次遍历  |
 | ZigzagLevelOrder |  103. 二叉树的锯齿层次遍历  |
+| MaxDepth | 104. 二叉树的最大深度 |
