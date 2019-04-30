@@ -16,3 +16,4 @@
 | MaxDepth | 104. 二叉树的最大深度 |
 | LevelOrderBottom | 107. 二叉树的层次遍历 II |
 | MinDepth |111. 二叉树的最小深度|
+| HasPathSum |112. 路径总和|
