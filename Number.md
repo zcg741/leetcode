@@ -19,4 +19,6 @@
 | UniquePaths |  不同路径 |     |
 | ClimbingStairs |  爬楼梯 |     |
 | Combinations |  组合 |     |
+| GenerateYh |  杨辉三角 |     |
+| GenerateYh2 |  杨辉三角Ⅱ |     |
 
