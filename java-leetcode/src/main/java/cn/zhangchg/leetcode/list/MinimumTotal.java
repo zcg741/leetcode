@@ -3,6 +3,7 @@ package cn.zhangchg.leetcode.list;
 import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -29,13 +30,31 @@ public class MinimumTotal {
         List<List<Integer>> triangle = new ArrayList<>();
         triangle.add(Lists.newArrayList(2));
         triangle.add(Lists.newArrayList(3, 4));
-        //triangle.add(Lists.newArrayList(6, 5, 7));
-        //triangle.add(Lists.newArrayList(4, 3, 1, 8));
+        triangle.add(Lists.newArrayList(6, 5, 7));
+        triangle.add(Lists.newArrayList(4, 3, 1, 8));
         MinimumTotal minimumTotal = new MinimumTotal();
         System.err.println(minimumTotal.minimumTotal(triangle));
     }
 
     public int minimumTotal(List<List<Integer>> triangle) {
+        if (triangle.size() == 0) {
+            return 0;
+        }
+        List<Integer> integerList1 = triangle.get(triangle.size() - 1);
+        int dp[] = new int[integerList1.size()];
+        for (int i = 0; i < integerList1.size(); i++) {
+            dp[i] = integerList1.get(i);
+        }
+        for (int i = dp.length - 2; i >= 0; i--) {
+            List<Integer> row = triangle.get(i);
+            for (int j = 0; j <= i; j++) {
+                dp[j] = Math.min(dp[j], dp[j + 1]) + row.get(j);
+            }
+        }
+        return dp[0];
+    }
+
+    public int minimumTotal2(List<List<Integer>> triangle) {
         if (triangle.size() == 0) {
             return 0;
         }
