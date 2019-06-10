@@ -40,3 +40,4 @@
 | MergeSortArray |  88. 合并两个有序数组 |  |
 | LargestRectangleArea | 84. 柱状图中最大的矩形 |  |
 | MaxProfit | 121、买卖股票的最佳时机 |  |
+| MaxProfit2 | 122、买卖股票的最佳时机Ⅱ |  |
