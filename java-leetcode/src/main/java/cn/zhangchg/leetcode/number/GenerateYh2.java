@@ -1,9 +1,6 @@
 package cn.zhangchg.leetcode.number;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * 给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
@@ -16,7 +13,10 @@ import java.util.List;
  * <p>
  * 输入: 3
  * 输出: [1,3,3,1]
- * <p>
+ * [ 1,1,1,1,1]
+ * [1,2,1,2,1]
+ * [1,3.3,3,1]
+ * [1,4,6,4,1]
  * <p>
  * 进阶：
  * <p>
@@ -26,11 +26,35 @@ public class GenerateYh2 {
 
     public static void main(String[] args) {
         GenerateYh2 generateYh2 = new GenerateYh2();
-        List<Integer> generate = generateYh2.getRow(0);
-        System.err.println(generate);
+        System.err.println(generateYh2.getRow(0));
+        System.err.println(generateYh2.getRow(1));
+        System.err.println(generateYh2.getRow(2));
+        System.err.println(generateYh2.getRow(3));
+        System.err.println(generateYh2.getRow(4));
+        System.err.println(generateYh2.getRow2(4));
+        System.err.println(generateYh2.getRow(5));
+        System.err.println(generateYh2.getRow2(5));
+        System.err.println(generateYh2.getRow(6));
+        System.err.println(generateYh2.getRow2(6));
+        long start = System.currentTimeMillis();
+        System.err.println(generateYh2.getRow(100));
+        System.err.println(System.currentTimeMillis() - start);
+        start = System.currentTimeMillis();
+        System.err.println(generateYh2.getRow2(100));
+        System.err.println(System.currentTimeMillis() - start);
     }
 
-    public List<Integer> getRow(int numRows) {
+    public List<Integer> getRow(int rowIndex) {
+        List<Integer> list = new ArrayList<>(rowIndex + 1);
+        long nk = 1;
+        for(int i = 0; i <= rowIndex; i++){
+            list.add((int)nk);
+            nk = nk * (rowIndex - i) / (i + 1);
+        }
+        return list;
+    }
+
+    public List<Integer> getRow2(int numRows) {
 
         List<Integer> integerList = new LinkedList<>();
         integerList.add(1);
