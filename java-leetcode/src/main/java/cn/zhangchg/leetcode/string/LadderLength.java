@@ -77,8 +77,8 @@ public class LadderLength {
         /*
          * bfs就是把每次筛选出来的节点保存到一个Set中，然后再次逐个遍历
          */
-        Set<String> beginSet = new HashSet<String>();
-        Set<String> endSet = new HashSet<String>();
+        Set<String> beginSet = new HashSet<>();
+        Set<String> endSet = new HashSet<>();
         beginSet.add(beginWord);
         endSet.add(endWord);
         int step = 1;

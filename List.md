@@ -14,4 +14,5 @@
 | DeleteDuplicates2 |  83. 删除排序链表中的重复元素Ⅱ |  |
 | DeleteDuplicates |  84. 删除排序链表中的重复元素 |  |
 | minimumTotal |  120. 三角形最小路径和 |  |
+| HasCycle |  141. 环形链表 |  |
 
