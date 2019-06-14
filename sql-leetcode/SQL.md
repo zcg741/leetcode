@@ -8,4 +8,5 @@
 | customers-who-never-order.sql|  183. 从不订购的抠门客户 |  |
 |left_person.sql|  175. 组合两个表 |  |
 |second-highest-salary.sql|  176. 第二高的薪水 |  |
+|nth-highest-salary.sql|  177. 第n高的薪水 |  |
 
