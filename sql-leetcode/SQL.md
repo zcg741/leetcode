@@ -10,4 +10,5 @@
 |second-highest-salary.sql|  176. 第二高的薪水 |  |
 |nth-highest-salary.sql|  177. 第n高的薪水 |  |
 |department-highest-salary.sql|184. 部门工资最高的员工|  |
+|department-top-three-salary.sql|185. 部门工资前三高的员工|  |
 
