@@ -1,7 +1,7 @@
 # leetcode
 依次做leetcode的题，记录下来，希望有点成长，并且能坚持下来
 
-## java
+## 算法题
 ### 数字相关
 [数字](Number.md)
 

@@ -1,0 +1,14 @@
+{
+  "name": "java-script-leetcode",
+  "version": "1.0.0",
+  "description": "java-script-leetcode",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "zhangchg",
+  "license": "ISC"
+}
