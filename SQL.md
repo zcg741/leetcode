@@ -11,4 +11,5 @@
 |nth-highest-salary.sql|  177. 第n高的薪水 |  |
 |department-highest-salary.sql|184. 部门工资最高的员工|  |
 |department-top-three-salary.sql|185. 部门工资前三高的员工|  |
+|deleteDuplicateEmaril.sql|196、删除重复的电子邮箱|  |
 
