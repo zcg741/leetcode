@@ -1,9 +1,9 @@
 # leetcode
 依次做leetcode的题，记录下来，希望有点成长，并且能坚持下来
 
-## java
+## 字符串相关
 
-### 字符串相关
+### java
 | 类   |      功能      |  备注 |
 |----------|:-------------:|------:|
 | LongestSubstringWithoutRepeatingCharacters |  无重复字符的最长子串 |  |
@@ -19,3 +19,9 @@
 | NumDecodings |  91.解码方法 |  |
 | IsPalindrome |  125、验证回文串 |  |
 | LadderLength |  127、单词接龙 | 超出时间限制 |
+
+
+### java
+| 类   |      功能      |  备注 |
+|----------|:-------------:|------:|
+| reverseBits |  190、颠倒二进制位 |  |
