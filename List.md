@@ -20,4 +20,5 @@
 |----------|:-------------:|------:|
 | numberOfIslands |  200、岛屿数量 |  |
 | removeElements |  203、移除链表元素 |  |
+| reverseList |  206、反转链表 |  |
 
