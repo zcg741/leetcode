@@ -22,4 +22,5 @@
 | removeElements |  203、移除链表元素 |  |
 | reverseList |  206、反转链表 |  |
 | containsDuplicate |  217、存在重复元素 |  |
+| containsNearbyDuplicate |  219、存在重复元素Ⅱ |  |
 
