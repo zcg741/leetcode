@@ -16,7 +16,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-from src.listNode import ListNode
+from src.list.listNode import ListNode
 from typing import List
 
 

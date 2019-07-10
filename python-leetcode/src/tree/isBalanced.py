@@ -40,7 +40,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from src.TreeNode import TreeNode
+from src.tree.TreeNode import TreeNode
 
 
 class Solution:
