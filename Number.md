@@ -27,3 +27,4 @@
 |----------|:-------------:|------:|
 | happyNumber |  快乐数 |  |
 | countPrimes |  204、计数质数 |  |
+| convertToTitle | 168、Excel表列名称|  |
