@@ -24,7 +24,7 @@
 #         self.right = None
 from typing import List
 
-from src.TreeNode import TreeNode
+from src.tree.TreeNode import TreeNode
 
 
 class Solution:
