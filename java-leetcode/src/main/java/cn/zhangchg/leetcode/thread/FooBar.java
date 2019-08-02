@@ -44,8 +44,8 @@ public class FooBar {
     private Condition two = lock.newCondition();
     private volatile int flag = 0;
     private int n;
-    private volatile AtomicInteger mutex1 = new AtomicInteger();
-    private volatile AtomicInteger mutex2 = new AtomicInteger();
+    private AtomicInteger mutex1 = new AtomicInteger();
+    private AtomicInteger mutex2 = new AtomicInteger();
 
     public FooBar(int n) {
         this.n = n;
