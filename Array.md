@@ -41,6 +41,7 @@
 | LargestRectangleArea | 84. 柱状图中最大的矩形 |  |
 | MaxProfit | 121、买卖股票的最佳时机 |  |
 | MaxProfit2 | 122、买卖股票的最佳时机Ⅱ |  |
+| MaximalSquare | 221、最大正方形 |  |
 
 ### java-script
 | 类   |      功能      |  备注 |
