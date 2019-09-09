@@ -22,6 +22,7 @@
 | GenerateYh |  杨辉三角 |     |
 | GenerateYh2 |  杨辉三角Ⅱ |     |
 | isUgly |  是否是丑数 |     |
+| NthUglyNumber |  找出第 n 个丑数 |     |
 
 ### python
 | 类   |      功能      |  备注 |    
