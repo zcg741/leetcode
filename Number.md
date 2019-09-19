@@ -7,6 +7,7 @@
 |----------|:-------------:|------:|
 | AddTwoNumbers |  数字数组相加 |  |
 | TwoSum |  两数相加 |  |
+| TwoSum2 |  两数相加2 |  |
 | ReverseInteger |    将整数中的数字进行反转   |    |
 | PalindromeNumber | 判断是否是回文数 |     |
 | IntegerToRoman | 阿拉伯数字转罗马数字 |     |
@@ -21,6 +22,8 @@
 | Combinations |  组合 |     |
 | GenerateYh |  杨辉三角 |     |
 | GenerateYh2 |  杨辉三角Ⅱ |     |
+| isUgly |  是否是丑数 |     |
+| NthUglyNumber |  找出第 n 个丑数 |     |
 
 ### python
 | 类   |      功能      |  备注 |    
