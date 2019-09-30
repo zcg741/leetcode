@@ -1,7 +1,8 @@
 package cn.zhangchg.leetcode.arrays;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
+import javafx.collections.transformation.SortedList;
+
+import java.util.TreeSet;
 
 /**
  * 给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。
@@ -43,36 +44,34 @@ import java.util.Queue;
 public class MaxSlidingWindow {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
-        if(nums.length == 0){
-            return nums;
+        int size = k;
+        if (size == 0 || size > nums.length) {
+            return new int[0];
         }
-        int[] flagArr = new int[nums.length + 1 - k];
-        if (k == 0) {
-            return flagArr;
-        }
-        int[] a = new int[k];
-        int leftFlag = 0;
-        for (int i = 0; i < k; i++) {
-            a[i] = nums[i];
-        }
-        int flag = 0;
-        flagArr[leftFlag++] = getMaxNumByQueue(a);
-        for (int i = k; i < nums.length; i++) {
-            a[flag] = nums[i];
-            flag++;
-            if (flag == k) {
-                flag = 0;
+        int[] result = new int[nums.length - size + 1];
+        int index = -1, max = 0;
+        //i表示的是窗的起始索引，所以最大只能是num.length - size
+        for (int i = 0; i <= nums.length - size; i++) {
+            //最大值的索引小于当前窗的起始索引，说明这个最大值已经过期
+            if (index < i) {
+                //保证最大值是在新的窗中
+                max = nums[i];
+                for (int j = i + 1; j < i + size; j++) {
+                    if (nums[j] >= max) {
+                        max = nums[j];
+                        index = j;
+                    }
+                }
+                //最大值未过期，判断当前窗的最后一个元素是否比Max大（因为此时的最大值是从上一个窗中选出的，其余元素已经进行了比较，只有新增的这个元素，即当前窗的最后一个元素未进行比较）。
+            } else {
+                if (nums[i + size - 1] >= max) {
+                    index = i + size - 1;
+                    max = nums[i + size - 1];
+                }
             }
-            flagArr[leftFlag++] = getMaxNumByQueue(a);
+            result[i] = max;
         }
-        return flagArr;
+        return result;
     }
 
-    private int getMaxNumByQueue(int[] a) {
-        int maxFlag = Integer.MIN_VALUE;
-        for (int integer : a) {
-            maxFlag = Math.max(integer, maxFlag);
-        }
-        return maxFlag;
-    }
 }
