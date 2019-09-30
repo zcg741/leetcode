@@ -43,25 +43,36 @@ import java.util.Queue;
 public class MaxSlidingWindow {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
+        if(nums.length == 0){
+            return nums;
+        }
         int[] flagArr = new int[nums.length + 1 - k];
         if (k == 0) {
             return flagArr;
         }
-        Queue<Integer> queue = new ArrayDeque<>();
+        int[] a = new int[k];
         int leftFlag = 0;
         for (int i = 0; i < k; i++) {
-            queue.add(nums[i]);
+            a[i] = nums[i];
         }
-        flagArr[leftFlag++] = getMaxNumByQueue(queue);
+        int flag = 0;
+        flagArr[leftFlag++] = getMaxNumByQueue(a);
         for (int i = k; i < nums.length; i++) {
-            queue.poll();
-            queue.add(nums[i]);
-            flagArr[leftFlag++] = getMaxNumByQueue(queue);
+            a[flag] = nums[i];
+            flag++;
+            if (flag == k) {
+                flag = 0;
+            }
+            flagArr[leftFlag++] = getMaxNumByQueue(a);
         }
         return flagArr;
     }
 
-    private int getMaxNumByQueue(Queue<Integer> queue) {
-        return queue.stream().max(Integer::compareTo).get();
+    private int getMaxNumByQueue(int[] a) {
+        int maxFlag = Integer.MIN_VALUE;
+        for (int integer : a) {
+            maxFlag = Math.max(integer, maxFlag);
+        }
+        return maxFlag;
     }
 }
