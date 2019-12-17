@@ -25,6 +25,7 @@
 | isUgly |  是否是丑数 |     |
 | NthUglyNumber |  找出第 n 个丑数 |     |
 | IsPowerOfTwo | 判断是否是2次幂 |     |
+| IsPowerOfTwo | 判断是否是4的幂次方 |     |
 
 ### python
 | 类   |      功能      |  备注 |    
