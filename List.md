@@ -15,6 +15,7 @@
 | minimumTotal |  120. 三角形最小路径和 |  |
 | HasCycle |  141. 环形链表 |  |
 | IsPalindrome |  234. 回文链表 |  |
+| ReverseList | 反转链表 |  |
 
 ### python
 | 类   |      功能      |  备注 |
