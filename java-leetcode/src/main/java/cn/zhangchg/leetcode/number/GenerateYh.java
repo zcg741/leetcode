@@ -1,6 +1,7 @@
 package cn.zhangchg.leetcode.number;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -29,11 +30,36 @@ public class GenerateYh {
 
     public static void main(String[] args) {
         GenerateYh generateYh = new GenerateYh();
-        List<List<Integer>> generate = generateYh.generate(4);
+        List<List<Integer>> generate = generateYh.generate(9);
         System.err.println(generate);
     }
 
     public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> list = new ArrayList<>(numRows);
+        if (numRows == 0) {
+            return list;
+        }
+        list.add(Arrays.asList(1));
+        if (numRows == 1) {
+            return list;
+        }
+        for (int i = 1; i < numRows; i++) {
+            list.add(getList(list.get(i - 1)));
+        }
+        return list;
+    }
+
+    public List<Integer> getList(List<Integer> list) {
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        for (int i = 0; i < list.size() - 1; i++) {
+            list1.add(list.get(i) + list.get(i + 1));
+        }
+        list1.add(1);
+        return list1;
+    }
+
+    public List<List<Integer>> generate1(int numRows) {
         if (numRows == 0) {
             return Collections.emptyList();
         }
