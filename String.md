@@ -20,6 +20,7 @@
 | IsPalindrome |  125、验证回文串 |  |
 | LadderLength |  127、单词接龙 | 超出时间限制 |
 | LongestPalindrome |  5、最长回文字符串 |  |
+| IsAnagram |  234、字母异位词 |  |
 
 
 ### java-script
