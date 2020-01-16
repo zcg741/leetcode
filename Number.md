@@ -26,6 +26,7 @@
 | NthUglyNumber |  找出第 n 个丑数 |     |
 | IsPowerOfTwo | 判断是否是2次幂 |     |
 | IsPowerOfTwo | 判断是否是4的幂次方 |     |
+| AddDigits | 反复将各个位上的数字相加 |     |
 
 ### python
 | 类   |      功能      |  备注 |    
