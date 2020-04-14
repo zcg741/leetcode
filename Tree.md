@@ -17,6 +17,7 @@
 | MinDepth |111. 二叉树的最小深度|
 | HasPathSum |112. 路径总和|
 | PathSum |113. 路径总和Ⅱ|
+| BinaryTreePaths |257. 二叉树的所有路径|
 
 ### python
 | 类   |      功能      |  备注 |
