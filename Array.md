@@ -44,6 +44,7 @@
 | MaximalSquare | 221、最大正方形 |  |
 | MaxSlidingWindow | 滑动窗口 |  |
 | ReverseString | 反转字符串 |  |
+| SingleNumber | 260.只出现一次的数字Ⅲ |  |
 
 ### java-script
 | 类   |      功能      |  备注 |
