@@ -18,6 +18,7 @@
 | HasPathSum |112. 路径总和|
 | PathSum |113. 路径总和Ⅱ|
 | BinaryTreePaths |257. 二叉树的所有路径|
+| BuildTree |105. 根据一棵树的前序遍历与中序遍历构造二叉树|同理可以写106后序遍历|
 
 ### python
 | 类   |      功能      |  备注 |
