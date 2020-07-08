@@ -1,8 +1,7 @@
 package cn.zhangchg.leetcode.arrays
 
 import org.junit.Test
-
-import java.util.Arrays
+import java.util.*
 
 class MaxSlidingWindowTest {
 

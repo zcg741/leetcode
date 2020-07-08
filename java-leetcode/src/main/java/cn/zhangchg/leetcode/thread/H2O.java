@@ -1,6 +1,6 @@
 package cn.zhangchg.leetcode.thread;
 
-import java.util.concurrent.*;
+import java.util.concurrent.Semaphore;
 
 class H2O {
 

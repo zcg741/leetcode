@@ -1,7 +1,5 @@
 package cn.zhangchg.leetcode.socket;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.net.InetSocketAddress;
 
 public class Consumer {

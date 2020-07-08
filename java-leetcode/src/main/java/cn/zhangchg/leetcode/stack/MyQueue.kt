@@ -1,6 +1,6 @@
 package cn.zhangchg.leetcode.stack
 
-import java.util.Stack
+import java.util.*
 
 /**
  * 使用栈实现队列的下列操作：

@@ -2,7 +2,6 @@ package cn.zhangchg.leetcode.tree;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * 给定一个二叉树，返回它的中序 遍历。

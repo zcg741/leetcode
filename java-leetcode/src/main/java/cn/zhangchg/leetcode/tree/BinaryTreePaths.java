@@ -1,9 +1,6 @@
 package cn.zhangchg.leetcode.tree;
 
-import com.google.common.collect.Lists;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 

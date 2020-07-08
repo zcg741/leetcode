@@ -8,6 +8,8 @@ package cn.zhangchg.leetcode.socket;
  * 修改内容：新增
  */
 
+import com.alibaba.fastjson.JSON;
+
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationHandler;
@@ -15,8 +17,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-
-import com.alibaba.fastjson.JSON;
 
 /**
  * @author peiyu

@@ -1,7 +1,5 @@
 package cn.zhangchg.leetcode.socket;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 public class Provider {
     public static void main(String[] args) throws Exception {
         RPCServer prcServer=new RPCServerCenter(8888);

@@ -1,6 +1,7 @@
 package cn.zhangchg.leetcode.number
 
-import java.util.ArrayList
+import java.util.*
+
 //编写一个程序，找出第 n 个丑数。
 //
 // 丑数就是只包含质因数 2, 3, 5 的正整数。
@@ -61,7 +62,7 @@ class NthUglyNumber {
         var t2 = 0
         var t3 = 0
         var t5 = 0
-        var curNum = 1
+        var curNum: Int
         for (i in 1 until n) {
             val i2 = list[t2] * 2
             val i3 = list[t3] * 3

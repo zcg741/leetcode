@@ -80,14 +80,14 @@ class MaximalSquare {
         return maxSquare
     }
 
-    private fun getMaxSquare(i: Int, j: Int, matrix: Array<CharArray>): Int {
+    private fun getMaxSquare(ii: Int, jj: Int, matrix: Array<CharArray>): Int {
         val len = matrix.size
         val ylen = matrix[0].size
-        var minLen = ylen - j
+        var minLen = ylen - jj
         var maxI = 0
-        for (i in i until len) {
+        for (i in ii until len) {
             var minLenTmp = 0
-            for (j in j until ylen) {
+            for (j in jj until ylen) {
                 if (matrix[i][j] == '0') {
                     break;
                 }

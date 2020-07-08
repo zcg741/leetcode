@@ -1,6 +1,8 @@
 package cn.zhangchg.leetcode.number;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。

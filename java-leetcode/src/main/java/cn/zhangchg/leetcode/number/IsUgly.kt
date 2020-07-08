@@ -31,8 +31,8 @@ package cn.zhangchg.leetcode.number
 // Related Topics 数学
 class IsUgly {
 
-    fun isUgly(num: Int): Boolean {
-        var num = num
+    fun isUgly(numFlag: Int): Boolean {
+        var num = numFlag
         if (num == 1) {
             return true
         }
