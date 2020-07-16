@@ -1,62 +1,70 @@
 package cn.zhangchg.leetcode.arrays;
 
+import java.util.Arrays;
+
 public class Test {
     /**
      * 答致命三问
      * 终回归现实
      */
     public static void main(String[] args) {
-        boolean a = false,
-                b = false,
-                c = false;
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-        System.out.println(decode("5oKo5aSa6auY77yIY23vvInvvJ8="));
-        int height = 0;
-        while (height < 140) {
-            try {
-                String h = scanner.nextLine();
-                height = Integer.parseInt(h);
-                if (height >= 140) {
+        //算法四：判断该数i是否能被小于其开平方根的质数整除并且为奇数，是--->是质数；不是--->不是质数
+        final int NUM = 10000;
+        //定义数组array 来储存质数
+        int[] array = new int[NUM / 2];
+        int size = 0, count = 0;
+        //将质数2赋值给array[0]
+        array[size++] = 2;
+        System.out.println("2");
+        for (int i = 3; i <= NUM; i += 2, count++) {
+            boolean is = true;//  true--->质数    false--->不是质数
+            //判断该数i是否能被小于其开平方根的质数整除并且为奇数，是--->是质数；不是--->不是质数
+            for (int j = 0; array[j] <= (int) Math.sqrt(i); j++, count++) {
+                if (i % array[j] == 0) {
+                    is = false;
                     break;
                 }
-            } catch (Exception e) {
-                System.out.println(decode("5oKo6L6T5YWl5LqG5ZWl77yf"));
             }
-            System.out.println(decode("5oKo5aSa6auY77yIY23vvInvvJ8="));
-        }
-        if (180 > height) {
-            System.out.println(decode("5oKo6L+Y5piv566X5LqG5ZCn77yB"));
-            return;
-        }
-        a = true;
-        System.out.println(decode("5oKo5a2Y5qy+5aSa5bCR77yI5LiH77yJ5ZWK77yf"));
-        String d = scanner.nextLine();
-        int deposit = Integer.parseInt(d);
-        if (deposit < 500) {
-            System.out.println(decode("6YKj5oKo5YaN5Yqq5Yqq5Yqb5ZWK"));
-            return;
-        }
-        b = true;
-        System.out.println(decode("5oKo6KeJ5b6X6Ieq5bex5biF5ZCX77yf77yI5biF5oiW5LiN5biF77yJ"));
-        String face = scanner.nextLine();
-        if ("5LiN5biF".equals(encode(face))) {
-            System.out.println(decode("6YKj5oKo5YaN5Yqq5Yqq5Yqb5ZWK"));
-            return;
-        }
-        c = true;
-        if (a && b && c) {
-            System.out.println(decode("5ZOO5ZOf77yB5oKo57uI5LqO5Yiw6L+Z5YS/5p2l5ZWm77yB6L+Y5piv5aW95aW95pWy5Luj56CB5ZCn77yB6auY5a+M5biF5ZOq6L+Z5LmI5aSa5ZWK77yB5ZOI5ZOI77yB"));
-            try {
-                java.util.concurrent.TimeUnit.MILLISECONDS.sleep(1500);
-            } catch (InterruptedException e) {
+            if (is) {
+                array[size++] = i;
+                //System.out.println(i);
             }
-            System.out.println(decode("6L+Y5piv56Wd5oKo6Lqr5L2T5YGl5bq344CB5bel5L2c6aG65Yip44CB5q+P5aSp5byA5b+D5ZCn77yB5ZOI5ZOI77yB"));
-            try {
-                java.util.concurrent.TimeUnit.MILLISECONDS.sleep(1500);
-            } catch (InterruptedException e) {
-            }
-            System.out.println(decode("5Yqz54Om57uZ5Liq6K+E6K665ZCn772e"));
         }
+        System.err.println(Arrays.stream(array).sum());
+        //System.out.println("循环了" + count + "次");
+        test4(10000);
+
+    }
+    private static void test4(int n) {
+        long start = System.currentTimeMillis();    //取开始时间
+        //素数总和
+        int sum = 0;
+        //1000万以内的所有素数
+        //用数组将1000万以内的数分为两大派系，素数用0代替数值，合数用1代替数值；
+        //一开始默认全部为素数，所以值全部为0，等到开始筛选的时候再把为合数的赋值为1
+        int num[] = new int[n];
+        num[0] = 1;          //由于1规定不是素数，所以要提前用1标值
+        //根据埃氏筛法的结论，要得到自然数  N 以内的全部素数，必须把不大于" 二次根号  N "的所有素数的倍数剔除，剩下的就是素数
+        double prescription = Math.sqrt(n);
+        for (int i = 2; i <= prescription; i++) {
+            //开始把所有素数的倍数剔除，剩下的就是素数
+            for (int j = i * i; j <= n; j += i) {
+                //从i*i开始去除，因为比i*i小的倍数，已经在前面去除过了
+                //例如：i=5
+                //5的2倍（10），3倍（15），在i=2的时候，已经去除过了
+
+                num[j - 1] = 1;   //把素数的倍数剔除，也就是赋值为1，不是素数就是合数
+            }
+        }
+        //遍历数组，把值为0的数全部统计出来，得到素数之和
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] == 0)
+                sum += i + 1;
+        }
+        System.out.println(n + "以内的素数有" + sum + "个");
+        long end = System.currentTimeMillis();
+        System.out.println("The time cost is " + (end - start));
+        System.out.println("");
     }
 
     private static String encode(String str) {
